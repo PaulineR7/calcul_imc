@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Calcul ton IMC</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Calcul d'IMC</h1>
+        <div class="formulaire">
+            <div class="input-container">
+                <div class="input-group">
+                    <label for="height">Votre taille en centmètres</label>
+                    <input id="height" class="bmi-input" type="number" placeholder="180">
+                </div>
+
+                <div class="input-group">
+                    <label for="weight">Votre poids en kg</label>
+                    <input id="weight" class="bmi-input" type="number" placeholder="75">
+                </div>
+            </div>
+        </div>
+        <div class="validation-btn">Calculer un IMC</div>
+        <div class="bmi-value">0</div>
+        <div class="comment">En attente de résultat...</div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
